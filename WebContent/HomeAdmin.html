@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Ticket Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("img/bg.webp");
+       background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #333;
+      background-color: white;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"], input[type="number"], select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UPLOAD A MOVIE</h1>
+  </header>
+  
+  <div class="container">
+    <form action="HomeAdmin">
+      <label for="movieName">Movie Name:</label>
+      <input type="text" id="movieName" name="movieN" placeholder="Enter movie name">
+      
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" placeholder="Enter price">
+      
+      <label for="actors">Actors:</label>
+      <input type="text" id="actors" name="actors" placeholder="Enter actors">
+      
+      <label for="directors">Director:</label>
+      <input type="text" id="directors" name="director" placeholder="Enter directors">
+
+<label for="image">Upload Image:</label>
+      <input type="file" id="image" name="image">
+      
+            <button type="submit" name="upload">UPLOAD</button>
+                        <button type="submit" name="update">UPDATE</button>
+                        <button type="submit" name="delete">DELETE</button>
+            
+           
+      
+    </form>
+    
+  </div>
+</body>
+</html>

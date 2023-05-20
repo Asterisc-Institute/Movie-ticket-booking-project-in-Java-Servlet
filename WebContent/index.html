@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('img/bg.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    
+    
+    .container {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    
+    
+    .button {
+       background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+    }
+    .button:hover{
+   background-color: grey;
+  color: white;
+    }
+    
+    .labelh1{
+    top:20%;
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    
+   
+    
+    
+    }   #slideshow {
+        overflow: hidden;
+        height: 555px;
+        width: 1080px;
+        margin: 0 auto;
+  box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 60px 200px 0 rgba(0, 0, 0, 0.19);
+    }
+     
+    /* Style each of the sides
+    with a fixed width and height */
+     
+    .slide {
+        float: left;
+        height: 555px;
+        width: 1080px;
+        
+    }
+     
+    /* Add animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(1080px * 4);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 12s ease infinite;
+    }
+     
+    /* Set the background color
+    of each of the slides */
+     
+    .slide:nth-child(1) {
+        background: url('img/slideshow/fastX.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;
+    }
+     
+    .slide:nth-child(2) {
+  		 background: url('img/slideshow/johnWick4.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;    }
+     
+    .slide:nth-child(3) {
+ 		 background: url('img/slideshow/gardiansOfG.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;    }
+     
+    .slide:nth-child(4) {
+ 		 background: url('img/slideshow/suzume.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;   
+          }
+     
+    /* Define the animation
+    for the slideshow */
+     
+    @keyframes slide {
+         
+        /* Calculate the margin-left for
+      each of the slides */
+        20% {
+            margin-left: 0px;
+        }
+        40% {
+            margin-left: calc(-1080px * 1);
+        }
+        60% {
+            margin-left: calc(-1080px * 2);
+        }
+        80% {
+            margin-left: calc(-1080px * 3);
+        }
+    }
+  </style>
+</head>
+<body>
+ <!-- Define the slideshow container -->
+    <div id="slideshow">
+        <div class="slide-wrapper">
+             
+            <!-- Define each of the slides
+         and write the content -->
+            <div class="slide">
+                <h1 class="slide-number">
+                
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                  
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                  
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                
+                </h1>
+            </div>
+        </div>
+    </div>
+<div class="labelh1">
+  <h1><label>Sign Up For More Interesting Content</label></h1>
+</div>
+ 
+  <div class="container">
+   <a href="signIn.html"><button class="button">SIGN IN </button></a> 
+    <a href="signUp.html"> <button class="button">SIGN UP </button></a> 
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>for Admins</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<style>
+
+body{
+background-image: url("img/bg.webp");
+  	  background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+.row{
+padding: 200px;
+}
+#inbtn{
+    margin-left: 40%;
+    margin-right: 60%;
+}
+	.palel-primary
+	{
+		border-color: #bce8f1;
+	}
+	.panel-primary>.panel-heading
+	{
+background-image: url("img/bg.webp");
+
+		
+	}
+	.panel-primary>.panel-body
+	{
+		background-color: #EDEDED;
+		}
+	
+</style>
+</head>
+<body>
+
+<body>
+<div class="row">
+    <div class="col-md-6 col-sm-12 col-lg-6 col-md-offset-3">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Welcome Admin
+			</div>
+			<div class="panel-body">
+				<form action="admin" name="myform">
+					<div class="form-group">
+						<label for="email">Email *</label>
+						<input id="email" name="email" class="form-control" type="email" data-validation="email">
+						
+					</div>
+					<div class="form-group">
+						<label for="password">Password *</label>
+						<input type="password" id="pass" name="pass" class="form-control" >
+						<span id="pass "class="text-danger"></span>
+					</div>
+					<button id="inbtn" type="submit" value="submit" class="btn btn-primary center">SIGN IN</button>
+			
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
