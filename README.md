@@ -1,6 +1,6 @@
 
 # Movie-ticket-booking-project-in-Java-Servlet
-Project : Prajwal8674 
+Project : <a href="https://github.com/Prajwal8674"></a>
 
 ## Using the Servlet API and MySQL database.
 
